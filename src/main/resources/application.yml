@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt_security
+    username: amigoscode
+    password: password
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddlAuto: create-drop
+    showSql: true
+    properties:
+      hibernate:
+        formatSql: true
+    database: postgresql
+    databasePlatform: org.hibernate.dialect.PostgreSQLDialect
